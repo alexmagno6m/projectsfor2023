@@ -7,6 +7,7 @@ base = DoubleVar()
 height = DoubleVar()
 areaTotal = DoubleVar()
 
+
 def areasize():
     areaTotal.set(base.get() * height.get())
 
