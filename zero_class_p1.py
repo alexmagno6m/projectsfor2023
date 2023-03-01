@@ -1,4 +1,6 @@
 # break statement
+import keyword
+
 x = 0
 while x < 10:
     if x == 5:
@@ -38,19 +40,19 @@ b = a[4]
 print(b)
 
 c = a[-1]
-print(c)
+print('index -1', c)
 
 d = a[:5]
-print('is', d)
+print('is start>', d)
 
 e = a[6:]
-print(e)
+print('is last>', e)
 
 f = a[3:8]
 print(f)
 
 g = a[:-5]
-print(g)
+print('is -', g)
 
 # replace
 h = a.replace('Hello', 'Cruel')
@@ -61,4 +63,4 @@ string = 'zen of python'
 s1 = string.split(' ')
 print(s1)
 
-
+#print(keyword.kwlist)

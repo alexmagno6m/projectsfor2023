@@ -18,16 +18,30 @@ print(brands2)
 brands3 = {'apple', 'samsung', 'huawei', 'hp'}
 
 brands4 = {'apple', 'xiaomi', 'google', 'lenovo'}
+# union
 a = brands3 | brands4
-print(a)
+a1 = brands3.union(brands4)
+print('union',a, a1)
+
+# intersection
 b = brands3 & brands4
-print(b)
+b1 = brands3.intersection(brands4)
+print('intersection',b, '-', b1)
+
+# difference
 c = brands3 - brands4
-print(c)
+c1 = brands3.difference(brands4)
+print('difference', c, c1)
+
+# difference
 d = brands4 - brands3
-print(d)
+d1 = brands4.difference(brands3)
+print('difference', d, '-', d1)
+
+# symmetric difference
 e = brands4 ^ brands3
-print(e)
+e1 = brands3.symmetric_difference(brands4)
+print('symetric', e, '-', e1)
 
 # adding element to set
 brands4.add('motorola')
@@ -35,6 +49,9 @@ print(brands4)
 
 # adding multiple elements use update({new_item1, new_item2})
 # remove element, o raise error
+brands4.update({'alcatel', 'poco phone'})
+print(brands4)
+
 brands4.remove('motorola')
 print(brands4)
 # discard, similar to remove, but check if index exist, doesn’t raise an exception if the item isn’t present.
