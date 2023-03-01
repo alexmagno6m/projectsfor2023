@@ -20,3 +20,14 @@ t = [4, 5, 6]
 for x, y in zip(s, t):
     z = (x, y)
     print(z)
+
+i = 0
+while i < len(s):
+    print(i)
+    i += 1
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+i = 0
+while i < len(numbers):
+    print(f'la potencia de {numbers[i]} es {numbers[i]**2}')
+    i += 1
