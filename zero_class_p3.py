@@ -8,11 +8,13 @@ for item in s:
 s = [(1, 2, 3), (4, 5, 6)]
 for x, y, z in s:
     print(x, y, z)
+print('is', x)
 
 # different size, unpacking items
 s = [(1, 2), (3, 4, 5), (6, 7, 8, 9)]
 for x, y, *extra in s:
     print(x, y, *extra)
+print('is', extra)
 # Los valores almacenados en la variable extra se colocan en una lista
 
 s = [1, 2, 3]

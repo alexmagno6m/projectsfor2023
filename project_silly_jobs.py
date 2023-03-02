@@ -9,5 +9,5 @@ while True:
     print("\n")
     try_again = input("intentar de nuevo? (presione Enter o sino n para salir)")
     if try_again.lower()=="n":
-        break
         input("\nPresione Enter para salir")
+        break
