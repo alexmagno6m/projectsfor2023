@@ -45,7 +45,7 @@ def addition_2(*, a, b, c):
     return total
 
 
-result = addition_2(a=2, b=3, c=5)
+result = addition_2(b=2, a=3, c=5)
 print(result)
 
 
