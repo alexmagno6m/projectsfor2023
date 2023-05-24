@@ -1,4 +1,4 @@
-class Library():
+class Library:
     loan = 0
     consults = 0
     book_numbers = 0
