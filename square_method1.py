@@ -1,41 +1,41 @@
-import tkinter as tk
-from tkinter import ttk
+from tkinter import *
+from tkinter.ttk import *
 
 
-root = tk.Tk()
+root = Tk()
 root.minsize(200, 200)
 
-base = tk.StringVar()
-height = tk.StringVar()
-areaTotal = tk.Label(root)
+base = StringVar()
+height = StringVar()
+areaTotal = Label(root)
 
 
 def areasize():
     global areaTotal
     c = int(e1.get()) * int(e2.get())
-    areaTotal = tk.Label(text='the area is {}'.format(c))
+    areaTotal = Label(text='the area is {}'.format(c))
     areaTotal.pack()
 
 
 
 
-l1 = tk.Label(root, text='base')
-l1.pack(anchor=tk.W, padx=10, pady=10, fill=tk.X)
+l1 = Label(root, text='base')
+l1.pack(anchor=W, padx=10, pady=5, fill=X)
 
-e1 = tk.Entry(root, textvariable=base)
-e1.pack(anchor=tk.W, padx=10, pady=10, fill=tk.X)
+e1 = Entry(root, textvariable=base)
+e1.pack(anchor=W, padx=10, pady=5, fill=X)
 
-l2 = tk.Label(root, text='height')
-l2.pack(anchor=tk.W, padx=10, pady=10, fill=tk.X)
+l2 = Label(root, text='height')
+l2.pack(anchor=W, padx=10, pady=5, fill=X)
 
-e2 = tk.Entry(root, textvariable=height)
-e2.pack(anchor=tk.W, padx=10, pady=10, fill=tk.X)
+e2 = Entry(root, textvariable=height)
+e2.pack(anchor=W, padx=10, pady=5, fill=X)
 
-b1 = tk.Button(root, text='Calculate', command=areasize)
-b1.pack(anchor=tk.W, padx=10, pady=5)
+b1 = Button(root, text='Calculate', command=areasize)
+b1.pack(anchor=W, padx=10, pady=5)
 
-l3 = tk.Label(root, textvariable=areaTotal)
-l3.pack(anchor=tk.W, padx=10, pady=10)
+l3 = Label(root, textvariable=areaTotal)
+l3.pack(anchor=W, padx=10, pady=10)
 
 
 
