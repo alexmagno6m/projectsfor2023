@@ -11,12 +11,14 @@ areaTotal = DoubleVar()
 def areasize():
     areaTotal.set(base.get() * height.get())
 
-
+def set_focus(event):
+    e1.focus_set()
 
 l1 = Label(root, text='base')
 l1.pack()
 
 e1 = Entry(root, textvariable=base)
+e1.bind('<FocusIn>', set_focus)
 e1.pack()
 
 l2 = Label(root, text='height')
