@@ -11,7 +11,7 @@ areaTotal = Label(root)
 
 def areasize(event=None):
     global areaTotal
-    c = int(e1.get()) * int(e2.get())
+    c = float(e1.get()) * float(e2.get())
     areaTotal = Label(text='the area is {}'.format(c))
     areaTotal.pack()
 

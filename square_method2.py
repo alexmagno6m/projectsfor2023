@@ -1,37 +1,38 @@
 from tkinter import *
-
+from tkinter.ttk import *
 root = Tk()
-root.minsize(200, 200)
+root.minsize(width=300, height=200)
 
-base = DoubleVar()
-height = DoubleVar()
+base = DoubleVar(value="")
+height = DoubleVar(value="")
 areaTotal = DoubleVar()
 
 
-def areasize():
+def areasize(event=None):
     areaTotal.set(base.get() * height.get())
 
 def set_focus(event):
     e1.focus_set()
 
 l1 = Label(root, text='base')
-l1.pack()
+l1.pack(anchor=W, padx=10, pady=5, fill=X)
 
 e1 = Entry(root, textvariable=base)
-e1.bind('<FocusIn>', set_focus)
-e1.pack()
+e1.pack(anchor=W, padx=10, pady=5, fill=X)
+e1.focus_set()
 
 l2 = Label(root, text='height')
-l2.pack()
+l2.pack(anchor=W, padx=10, pady=5, fill=X)
 
 e2 = Entry(root, textvariable=height)
-e2.pack()
+e2.pack(anchor=W, padx=10, pady=5, fill=X)
+e2.bind("<Return>", areasize)
 
 b1 = Button(root, text='Calculate', command=areasize)
-b1.pack()
+b1.pack(anchor=W, padx=10, pady=5, fill=X)
 
 l3 = Label(root, textvariable=areaTotal)
-l3.pack()
+l3.pack(anchor=W, padx=10, pady=5, fill=X)
 
 
 
