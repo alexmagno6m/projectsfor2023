@@ -20,12 +20,17 @@ while x < 10:
     print(x)
 
 print('done')
-
+url = "http://www.python.org"
 # Triple-qouted
 print('''Content-type: text/html
 <h1> Hello World </h1>
-Click <a href="http://www.python.org">here</a>.
-''')
+Click <a href={}>here</a>.
+'''.format(url))
+
+year = 2023
+print(''' este es el año {}
+mis datos son 
+'''.format(year))
 
 # Format
 year = 2023

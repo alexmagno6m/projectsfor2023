@@ -1,4 +1,4 @@
-string = "hola"
+string = "hola$"
 index = 0
 while True:
         if string[index].isdecimal():
