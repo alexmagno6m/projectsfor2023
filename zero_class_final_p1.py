@@ -61,10 +61,10 @@ result = func(5, 5)
 print(result)
 
 
-def quotient(a=float, b=float):
+def quotient(a: float, b: float = 1) -> float:
     """
     Compute the quotient between two numbers
-    :param a: float
+    :param a: float,
     :param b: float, different from zero
     :return: float
     """
@@ -76,5 +76,5 @@ def quotient(a=float, b=float):
         print("b must be different from zero")
 
 
-result = quotient(4, 5)
+result = quotient(4, 3)
 print(result)
