@@ -15,17 +15,17 @@ def set_focus(event):
     e1.focus_set()
 
 l1 = Label(root, text='base')
-l1.pack(anchor=W, padx=10, pady=5, fill=X)
+l1.pack(anchor=W, padx=10, pady=5)
 
 e1 = Entry(root, textvariable=base)
-e1.pack(anchor=W, padx=10, pady=5, fill=X)
+e1.pack(padx=10, pady=5, fill=X)
 e1.focus_set()
 
 l2 = Label(root, text='height')
-l2.pack(anchor=W, padx=10, pady=5, fill=X)
+l2.pack( padx=10, pady=5, fill=X)
 
 e2 = Entry(root, textvariable=height)
-e2.pack(anchor=W, padx=10, pady=5, fill=X)
+e2.pack( padx=10, pady=5, fill=X)
 e2.bind("<Return>", areasize)
 
 b1 = Button(root, text='Calculate', command=areasize)
